@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueAuto - Tienda de Autos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=53sXYSVo-WW8Vv8pwqX-taE08r5iEmB49ZSne-L28gWuH90pAER_ADesa8WyRxmFDrpK4kqFXKVYqzMBPDk4PfpBQkysTpbD2NIiHKxJ6ImpPqsqD7PPZLRC3DnKBjbDWKSyAVX41Ae15KDMl0menNbqUulAp4cFNQ1qzPE5Jia35SUeoztX0t_BqiunwM3sgUVpP-WmLDOn7WI_EyvC4JLPgr0ZLKDYnN0eYZ1uQL_fbIwYj6BmznAJhnVJ1jUiRD4EukiG9vb8BDDjUvhR3ksm0_1uXTJAhENBB_wTfxIL3wvMDb0PUG_EQ8tMD5XHeuYXPrAFjnVZc6bz0VnfEnETuH6s-D_tWztcPpkLXvgqzOkMsmquj3UUf2WP54A9VHVsUzynDrWyfPo7e6mtBF8D2Wo8RwclihyLpIkOmNKIAn8wWcCFIvoEkGBr54smBBsy9lU52Tcn6Nie2nL3kx2mwOgEx8XTclLexCMMo-Lcm0Etv63SPGTuMd-u99dpoXetxRCofc4GX57nYfThy8Nu6f1Ql8KtS1kLTTTs6B5Svl_DhAQxeBjrFM4lTKMsGQMcEtNChhxEEaAa9ZXNfUuJhI2z7kIK7X5FB_RWQRG_NEs-P-ujgaVLk61Q8TyAIYNDfPXaa8lJOS01FlqTTLAf8XSUbT5rXK1bbSJOtWC__PeO1lvTjH4IQdBG7qcFn06jjTfz19bguE4yuXyQV3g9PIykjepHAH_UN3U-CzvccSn2hdz_JfqRoGi1NVrkP2hJ1SUp0JPrwQly-EGdoO14qIGSNceiLyuC6qqjNzBoMzd_zZdVK_1xe9ytle1bWIJPvkyvxqtOPiY4nZWGGsGymjfTjMyspZJj-5cDGD_JiAtnmDGhEhZmWgQnWGgazL52r_gl_6gTBwA_2ht-qBuY1Nfa3Wj3Wm7_y0z127xhxTjY1sxTfxPQsuAxUkaJyUIoGbBtkiwiJLp1YbwxcOZJAp_XZfBzKxtbtNAQqpCXDJC7fnI9AbOLFqmqyW0gRwv3GxZjs4cxd-2Xd2OA3p6GMN6jIK67HWGqJukmty1j2AGBoc6f6OfQcwHmn7iYnzjY9I0pvnlRLpWU-ejaCWnlkUHvT_RnuT9s58K6HFd_sj8WUEFXTdMcRoP1pnowZs_oyCmKRIVde0ju-DtXWkmzwP3MtGD9IZkGtQGoFWA4jcVsQ0-HEnBHyCA12OB5uPEtqubc9Sg_KyTl425iYtBI3zBh1s2IxZmZhC7838uBvgxFcrPNEBs1djUyClwqR_0gFfautt9cLeZpWVS2AQ2d89kkF1q2FzXN7jpODI-8eBVjK3bYezyketbAldfXGVI4-Qotf4_FV6rlL9JBubtbJ6Asf-1eykD1d9TwPfu9gPKfi8YOBZF5P_A3Cpcs5TBN9IyXWdRWwo9AzcqxAoerTNUapSo8dSV6L-w7CeLCNdOCenpM5bgBmq97W0mwppTQgIa8bJqB68Tc7BKtapMHu-ETf-3q8GR-n8DEG7R3FdCAtOYj_NesKvhNIOR1ItjtNrhxKqFF7MI9ke8eyhlSv8cws7HrlgnTmzrsHfBeL_xYzkqB7oLsVIHwEbwNZtWIW3UJpv5xwDlYkieHiuN9UHjo5Qw4ZcAvh4w-Rdk" nonce="c29723fc21ead67df77288e163838931" charset="UTF-8"></script><style>
+        :root {
+            --primary-blue: #0d6efd;
+            --dark-blue: #0b5ed7;
+            --light-blue: #86b7fe;
+        }
+        
+        body {
+            padding-top: 56px;
+        }
+        
+        .navbar {
+            background-color: var(--primary-blue) !important;
+        }
+        
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.8)), 
+                        url('https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+            margin-bottom: 30px;
+            color: white;
+            text-align: center;
+        }
+        
+        .card {
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-blue);
+            border-color: var(--primary-blue);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--dark-blue);
+            border-color: var(--dark-blue);
+        }
+        
+        footer {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        
+        .about-section, .contact-section {
+            padding: 60px 0;
+        }
+        
+        .bg-light-blue {
+            background-color: #e7f1ff;
+        }
+        
+        .car-price {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            font-weight: bold;
+        }
+        
+        .car-features {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .car-features li {
+            margin-bottom: 5px;
+        }
+        
+        .car-features i {
+            color: var(--primary-blue);
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-car me-2"></i>BlueAuto
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vehiculos">Vehículos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold">BlueAuto - Concesionario Premium</h1>
+            <p class="lead">Los mejores vehículos al mejor precio</p>
+            <a href="#vehiculos" class="btn btn-primary btn-lg mt-3">Ver Vehículos</a>
+        </div>
+    </section>
+
+    <!-- Sección Vehículos -->
+    <section id="vehiculos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nuestros Vehículos</h2>
+            <div class="row">
+                <!-- Auto 1 - Tesla Model S -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Tesla Model S">
+                        <div class="card-body">
+                            <h5 class="card-title">Tesla Model S</h5>
+                            <ul class="car-features">
+                                <li><i class="fas fa-tachometer-alt"></i> 650 km autonomía</li>
+                                <li><i class="fas fa-bolt"></i> 1.99s 0-100 km/h</li>
+                                <li><i class="fas fa-chair"></i> 5 asientos</li>
+                            </ul>
+                            <p class="car-price">€89,990</p>
+                            <a href="#" class="btn btn-primary">Solicitar prueba de manejo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Auto 2 - Porsche 911 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Porsche 911">
+                        <div class="card-body">
+                            <h5 class="card-title">Porsche 911 Carrera</h5>
+                            <ul class="car-features">
+                                <li><i class="fas fa-tachometer-alt"></i> 3.4s 0-100 km/h</li>
+                                <li><i class="fas fa-gas-pump"></i> 10.8 L/100km</li>
+                                <li><i class="fas fa-chair"></i> 4 asientos</li>
+                            </ul>
+                            <p class="car-price">€107,500</p>
+                            <a href="#" class="btn btn-primary">Solicitar prueba de manejo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Auto 3 - Range Rover -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80" class="card-img-top" alt="Range Rover">
+                        <div class="card-body">
+                            <h5 class="card-title">Range Rover Sport</h5>
+                            <ul class="car-features">
+                                <li><i class="fas fa-tachometer-alt"></i> 5.0L V8</li>
+                                <li><i class="fas fa-gas-pump"></i> 13.1 L/100km</li>
+                                <li><i class="fas fa-chair"></i> 5 asientos</li>
+                            </ul>
+                            <p class="car-price">€79,900</p>
+                            <a href="#" class="btn btn-primary">Solicitar prueba de manejo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Auto 4 - BMW M5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://dolartoday.com/wp-content/uploads/2023/08/CS_15-3-scaled-1-2048x1252.jpeg" class="card-img-top" alt="BMW M5">
+                        <div class="card-body">
+                            <h5 class="card-title">BMW M5 Competition</h5>
+                            <ul class="car-features">
+                                <li><i class="fas fa-tachometer-alt"></i> 4.4L V8 Twin-Turbo</li>
+                                <li><i class="fas fa-bolt"></i> 3.3s 0-100 km/h</li>
+                                <li><i class="fas fa-chair"></i> 5 asientos</li>
+                            </ul>
+                            <p class="car-price">€108,900</p>
+                            <a href="#" class="btn btn-primary">Solicitar prueba de manejo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Auto 5 - Mercedes G-Class -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1425&q=80" class="card-img-top" alt="Mercedes G-Class">
+                        <div class="card-body">
+                            <h5 class="card-title">Mercedes-Benz G 550</h5>
+                            <ul class="car-features">
+                                <li><i class="fas fa-tachometer-alt"></i> 4.0L V8 Biturbo</li>
+                                <li><i class="fas fa-gas-pump"></i> 15.7 L/100km</li>
+                                <li><i class="fas fa-chair"></i> 5 asientos</li>
+                            </ul>
+                            <p class="car-price">€131,750</p>
+                            <a href="#" class="btn btn-primary">Solicitar prueba de manejo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Auto 6 - Audi R8 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://usaditoscars.com/wp-content/uploads/2023/07/carros-usados-populares-en-Venezuela-Toyota-Yaris-E.jpg" class="card-img-top" alt="Audi R8">
+                        <div class="card-body">
+                            <h5 class="card-title">Audi R8 V10</h5>
+                            <ul class="car-features">
+                                <li><i class="fas fa-tachometer-alt"></i> 5.2L V10</li>
+                                <li><i class="fas fa-bolt"></i> 3.2s 0-100 km/h</li>
+                                <li><i class="fas fa-chair"></i> 2 asientos</li>
+                            </ul>
+                            <p class="car-price">€148,700</p>
+                            <a href="#" class="btn btn-primary">Solicitar prueba de manejo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Auto 7 - Ford Mustang -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Ford Mustang">
+                        <div class="card-body">
+                            <h5 class="card-title">Ford Mustang GT</h5>
+                            <ul class="car-features">
+                                <li><i class="fas fa-tachometer-alt"></i> 5.0L V8</li>
+                                <li><i class="fas fa-bolt"></i> 4.3s 0-100 km/h</li>
+                                <li><i class="fas fa-chair"></i> 4 asientos</li>
+                            </ul>
+                            <p class="car-price">€43,900</p>
+                            <a href="#" class="btn btn-primary">Solicitar prueba de manejo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Auto 8 - Lamborghini Huracán -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1507136566006-cfc505b114fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1421&q=80" class="card-img-top" alt="Lamborghini Huracán">
+                        <div class="card-body">
+                            <h5 class="card-title">Lamborghini Huracán</h5>
+                            <ul class="car-features">
+                                <li><i class="fas fa-tachometer-alt"></i> 5.2L V10</li>
+                                <li><i class="fas fa-bolt"></i> 2.9s 0-100 km/h</li>
+                                <li><i class="fas fa-chair"></i> 2 asientos</li>
+                            </ul>
+                            <p class="car-price">€208,000</p>
+                            <a href="#" class="btn btn-primary">Solicitar prueba de manejo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Auto 9 - Toyota Land Cruiser -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://elcarrocolombiano.com/wp-content/uploads/2017/03/20170321-VENTAS-DE-CARROS-EN-COLOMBIA-FEBRERO-2017-07.jpg" class="card-img-top" alt="Toyota Land Cruiser">
+                        <div class="card-body">
+                            <h5 class="card-title">Toyota Land Cruiser</h5>
+                            <ul class="car-features">
+                                <li><i class="fas fa-tachometer-alt"></i> 3.3L V6 Turbo Diesel</li>
+                                <li><i class="fas fa-gas-pump"></i> 9.5 L/100km</li>
+                                <li><i class="fas fa-chair"></i> 7 asientos</li>
+                            </ul>
+                            <p class="car-price">€85,000</p>
+                            <a href="#" class="btn btn-primary">Solicitar prueba de manejo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Auto 10 - Chevrolet Corvette -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://th.bing.com/th/id/OIP.apVwHavhhdooqoimSrm5DwHaD2?rs=1&pid=ImgDetMain" class="card-img-top" alt="Chevrolet Corvette">
+                        <div class="card-body">
+                            <h5 class="card-title">Chevrolet Corvette Stingray</h5>
+                            <ul class="car-features">
+                                <li><i class="fas fa-tachometer-alt"></i> 6.2L V8</li>
+                                <li><i class="fas fa-bolt"></i> 2.9s 0-100 km/h</li>
+                                <li><i class="fas fa-chair"></i> 2 asientos</li>
+                            </ul>
+                            <p class="car-price">€62,900</p>
+                            <a href="#" class="btn btn-primary">Solicitar prueba de manejo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Auto 11 - Jeep Wrangler -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Jeep Wrangler">
+                        <div class="card-body">
+                            <h5 class="card-title">Jeep Wrangler Rubicon</h5>
+                            <ul class="car-features">
+                                <li><i class="fas fa-tachometer-alt"></i> 2.0L Turbo</li>
+                                <li><i class="fas fa-gas-pump"></i> 10.2 L/100km</li>
+                                <li><i class="fas fa-chair"></i> 5 asientos</li>
+                            </ul>
+                            <p class="car-price">€42,500</p>
+                            <a href="#" class="btn btn-primary">Solicitar prueba de manejo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Auto 12 - Ferrari 488 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Ferrari 488">
+                        <div class="card-body">
+                            <h5 class="card-title">Ferrari 488 GTB</h5>
+                            <ul class="car-features">
+                                <li><i class="fas fa-tachometer-alt"></i> 3.9L V8 Twin-Turbo</li>
+                                <li><i class="fas fa-bolt"></i> 3.0s 0-100 km/h</li>
+                                <li><i class="fas fa-chair"></i> 2 asientos</li>
+                            </ul>
+                            <p class="car-price">€265,000</p>
+                            <a href="#" class="btn btn-primary">Solicitar prueba de manejo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+    <section id="nosotros" class="about-section bg-light-blue">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Quiénes Somos</h2>
+                    <p>BlueAuto es un concesionario premium especializado en vehículos de alta gama y deportivos. Desde 2015, nos hemos dedicado a ofrecer los mejores autos del mercado con un servicio personalizado.</p>
+                    <p>Nuestro equipo de expertos en automóviles selecciona cuidadosamente cada vehículo que ofrecemos, garantizando calidad, rendimiento y satisfacción para nuestros clientes.</p>
+                    <p>Además de la venta de vehículos, ofrecemos servicios de financiamiento, seguros y mantenimiento especializado para todas las marcas que representamos.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1583&q=80" alt="Concesionario BlueAuto" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contacto</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="vehiculo" class="form-label">Vehículo de interés</label>
+                            <select class="form-select" id="vehiculo">
+                                <option selected>Seleccione un modelo</option>
+                                <option>Tesla Model S</option>
+                                <option>Porsche 911 Carrera</option>
+                                <option>Range Rover Sport</option>
+                                <option>BMW M5 Competition</option>
+                                <option>Mercedes-Benz G 550</option>
+                                <option>Audi R8 V10</option>
+                                <option>Ford Mustang GT</option>
+                                <option>Lamborghini Huracán</option>
+                                <option>Toyota Land Cruiser</option>
+                                <option>Chevrolet Corvette Stingray</option>
+                                <option>Jeep Wrangler Rubicon</option>
+                                <option>Ferrari 488 GTB</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="mb-3">Información de Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt me-2 text-primary"></i> Av. Automotriz 1250, Ciudad, País</p>
+                    <p><i class="fas fa-phone me-2 text-primary"></i> +1 800 555 1234</p>
+                    <p><i class="fas fa-envelope me-2 text-primary"></i> info@blueauto.com</p>
+                    <p><i class="fas fa-clock me-2 text-primary"></i> Lunes a Viernes: 9:00 - 19:00<br>Sábados: 10:00 - 16:00</p>
+                    
+                    <h4 class="mt-4 mb-3">Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-facebook fa-2x text-primary"></i></a>
+                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-twitter fa-2x text-primary"></i></a>
+                        <a href="#" class="text-decoration-none me-3"><i class="fab fa-instagram fa-2x text-primary"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="fab fa-youtube fa-2x text-primary"></i></a>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215373510342!2d-73.9878446845938!3d40.7484404793279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1623251234567!5m2!1sen!2sus" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5><i class="fas fa-car me-2"></i>BlueAuto</h5>
+                    <p>Concesionario de vehículos premium. Calidad, rendimiento y servicio exclusivo.</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-white">Inicio</a></li>
+                        <li><a href="#vehiculos" class="text-white">Vehículos</a></li>
+                        <li><a href="#nosotros" class="text-white">Quiénes Somos</a></li>
+                        <li><a href="#contacto" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Newsletter</h5>
+                    <p>Recibe información sobre nuevos modelos y ofertas especiales</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Tu email">
+                        <button class="btn btn-light" type="submit">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-md-start">
+                    <p class="mb-0">&copy; 2023 BlueAuto. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-white me-2">Términos y Condiciones</a>
+                        <a href="#" class="text-white">Política de Privacidad</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
