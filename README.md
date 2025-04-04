@@ -1,1 +1,41 @@
-# aplicaci-n-responsive
+# BlueAuto - Tienda de Autos Premium
+
+## Descripción
+BlueAuto es un sitio web de concesionario de vehículos premium que muestra una variedad de autos de lujo y deportivos. El sitio incluye:
+
+- Página principal con sección hero destacada
+- Galería de vehículos con 12 modelos diferentes
+- Sección "Quiénes Somos"
+- Formulario de contacto
+- Pie de página con información adicional
+
+## Tecnologías utilizadas
+- HTML5
+- CSS3
+- Bootstrap 5.3.0
+- Font Awesome 6.4.0 (para iconos)
+
+## Características principales
+1. **Diseño responsive** que se adapta a todos los dispositivos
+2. **Efectos visuales** en las tarjetas de vehículos (hover)
+3. **Navegación fluida** entre secciones
+4. **Formulario de contacto** funcional
+5. **Mapa interactivo** de Google Maps
+6. **Diseño moderno** con esquema de colores azules
+
+## Estructura del sitio
+- **Navbar**: Menú de navegación fijo en la parte superior
+- **Hero Section**: Imagen de fondo con texto destacado
+- **Sección de Vehículos**: 12 tarjetas con información detallada
+- **Quiénes Somos**: Información sobre el concesionario
+- **Contacto**: Formulario + información de contacto
+- **Footer**: Información legal y enlaces rápidos
+
+## Personalización
+El sitio utiliza variables CSS para los colores principales:
+```css
+:root {
+    --primary-blue: #0d6efd;
+    --dark-blue: #0b5ed7;
+    --light-blue: #86b7fe;
+}
